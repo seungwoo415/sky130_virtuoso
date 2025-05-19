@@ -1,0 +1,77 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.8-64b 01/30/2024 20:01 (cpgbld02) $
+          : sub-version  IC6.1.8-64b.500.35 
+Started at: 29-Jan-2025  00:17:19
+User Name : cs199-apt
+Host Name : eda-4.EECS.Berkeley.EDU
+Directory : /home/aa/users/cs199-apt/cadence/sky130_virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'DigitalLDOLogic' is attached to the technology library 'sky130_fd_pr_main'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/libs/sky130_fd_pr_main/sky130_fd_pr_main.layermap
+INFO (XSTRM-163): You have not used the '-viaMap' option. If a viaMap file, corresponding technology file or technology library exist, then use the '-viaMap' option for creating oaVia instances in the Streamed-In library. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options:
+	library				DigitalLDOLogic
+	strmFile			/home/aa/users/cs199-apt/cadence/sky130_virtuoso/DigitalLDOLogic.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/libs/sky130_fd_pr_main/sky130_fd_pr_main.layermap
+	propSeparator			,
+
+INFO (XSTRM-220): 1. Translating STRUCTURE sky130_fd_sc_hd__dlygate4sd2_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__dlygate4sd2_1/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 2. Translating STRUCTURE sky130_fd_sc_hd__clkbuf_2 as cellView DigitalLDOLogic/sky130_fd_sc_hd__clkbuf_2/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 3. Translating STRUCTURE sky130_fd_sc_hd__clkbuf_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__clkbuf_1/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 4. Translating STRUCTURE sky130_fd_sc_hd__buf_8 as cellView DigitalLDOLogic/sky130_fd_sc_hd__buf_8/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 5. Translating STRUCTURE sky130_fd_sc_hd__dfxtp_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__dfxtp_1/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 6. Translating STRUCTURE sky130_fd_sc_hd__a221o_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__a221o_1/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 7. Translating STRUCTURE sky130_fd_sc_hd__a21o_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__a21o_1/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 8. Translating STRUCTURE sky130_fd_sc_hd__or3_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__or3_1/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 9. Translating STRUCTURE sky130_fd_sc_hd__inv_2 as cellView DigitalLDOLogic/sky130_fd_sc_hd__inv_2/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 10. Translating STRUCTURE sky130_fd_sc_hd__tap_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__tap_1/layout.
+INFO (XSTRM-220): 11. Translating STRUCTURE sky130_fd_sc_hd__tapvpwrvgnd_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__tapvpwrvgnd_1/layout.
+INFO (XSTRM-220): 12. Translating STRUCTURE sky130_fd_sc_hd__decap_6 as cellView DigitalLDOLogic/sky130_fd_sc_hd__decap_6/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 13. Translating STRUCTURE sky130_fd_sc_hd__decap_3 as cellView DigitalLDOLogic/sky130_fd_sc_hd__decap_3/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 14. Translating STRUCTURE sky130_fd_sc_hd__decap_12 as cellView DigitalLDOLogic/sky130_fd_sc_hd__decap_12/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 15. Translating STRUCTURE sky130_fd_sc_hd__decap_4 as cellView DigitalLDOLogic/sky130_fd_sc_hd__decap_4/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 16. Translating STRUCTURE sky130_fd_sc_hd__decap_8 as cellView DigitalLDOLogic/sky130_fd_sc_hd__decap_8/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '236:0' are ignored. This is because the stream layer-datatype pair is either not specified in the layer map file or the entry is invalid and was therefore ignored. Specify the stream layer-datatype pair in the layer map file or correct the wrong entry and try again.
+INFO (XSTRM-220): 17. Translating STRUCTURE sky130_fd_sc_hd__fill_1 as cellView DigitalLDOLogic/sky130_fd_sc_hd__fill_1/layout.
+INFO (XSTRM-220): 18. Translating STRUCTURE sky130_fd_sc_hd__fill_2 as cellView DigitalLDOLogic/sky130_fd_sc_hd__fill_2/layout.
+INFO (XSTRM-220): 19. Translating STRUCTURE DigitalLDOLogic as cellView DigitalLDOLogic/DigitalLDOLogic/layout.
+
+Summary of Objects Translated:
+	Instances:                              1181
+	CustomVias:                             0
+	StandardVias:                           4554
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               124
+	Paths:                                  1659
+	PathSegs:                               0
+	Rectangles:                             1123
+	Text:                                   197
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  19
+
+Elapsed Time: 1.2s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 13424KB  CPUs Used: 2
+INFO (XSTRM-234): Translation completed. '0' error(s) and '16' warning(s) found.

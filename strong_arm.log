@@ -1,0 +1,2498 @@
+
+Spectre (R) Circuit Simulator
+Version 19.1.0.455.isr11 64bit -- 10 Sep 2020
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: cs199-apt   Host: c111-6.EECS.Berkeley.EDU   HostID: 2080A728   PID: 844060
+Memory  available: 61.6569 GB  physical: 66.8657 GB
+Linux   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+CPU Type: 13th Gen Intel(R) Core(TM) i9-13900
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2000.0] (  1 ),  1 [2000.0] (),  2 [2000.0] (  3 )
+                 3 [2000.0] (),  4 [2000.0] (  5 ),  5 [2000.0] (),  6 [2000.0] (  7 )
+                 7 [2000.0] (),  8 [2000.0] (  9 ),  9 [2000.0] (), 10 [1597.1] ( 11 )
+                11 [2000.0] (), 12 [2000.0] ( 13 ), 13 [2000.0] (), 14 [2000.0] ( 15 )
+                15 [2000.0] (), 16 [2000.0] (), 17 [2000.0] (), 18 [2000.0] (), 19 [2000.0] ()
+                20 [2000.0] (), 21 [2000.0] (), 22 [2000.0] (), 23 [2000.0] (), 24 [2000.0] ()
+                25 [2000.0] (), 26 [2000.0] (), 27 [2000.0] (), 28 [2000.0] (), 29 [2000.0] ()
+                30 [2000.0] (), 31 [2000.0] ()
+        
+System load averages (1min, 5min, 15min) : 2.5 %, 2.1 %, 1.5 %
+Hyperthreading is enabled
+
+
+Simulating `strong_arm.scs' on c111-6.EECS.Berkeley.EDU at 3:56:11 PM, Sun Jul 21, 2024 (process id: 844060).
+Current working directory: /home/aa/users/cs199-apt/cadence/sky130_virtuoso
+Environment variable:
+    SPECTRE_DEFAULTS= -E 
+Command line:
+    /share/instsww/cadence/LIBERATE/tools.lnx86/bin/spectre -64  \
+        strong_arm.scs
+
+Loading /share/instsww/cadence/LIBERATE/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /share/instsww/cadence/LIBERATE/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /share/instsww/cadence/LIBERATE/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /share/instsww/cadence/LIBERATE/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /share/instsww/cadence/LIBERATE/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/aa/users/cs199-apt/cadence/sky130_virtuoso/strong_arm.scs
+Reading link:  /share/instsww/cadence/LIBERATE
+Reading file:  /share/instsww/cadence/LIBERATE.19.12.294/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/sky130.lib.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/esd_nfet_01v8/sky130_fd_pr__esd_nfet_01v8.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/esd_pfet_g5v0d10v5/sky130_fd_pr__esd_pfet_g5v0d10v5.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_g5v0d16v0/sky130_fd_pr__nfet_g5v0d16v0.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/esd_nfet_g5v0d10v5/sky130_fd_pr__esd_nfet_g5v0d10v5.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/corners/tt/nonfet.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_05v0_nvt/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/r+c/res_typical__cap_typical.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/sky130_fd_pr__model__r+c.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/r+c.mrp1monte.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_generic_nd/sky130_fd_pr__res_generic_nd.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_generic_pd/sky130_fd_pr__res_generic_pd.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parameters/typical.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/r+c/res_typical__cap_typical__lin.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/capacitors/sky130_fd_pr__model__cap_vpp.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_l1m1m2_noshield/sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_l1m1m2_noshield/sky130_fd_pr__cap_vpp_04p4x04p6_l1m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2_noshield/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_01p8x01p8_m1m2_noshield/sky130_fd_pr__cap_vpp_01p8x01p8_m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_m1m2_shieldl1/sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2_shieldl1/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m2_shieldl1/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_shieldl1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_l1m1m2_shieldpo_floatm3/sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_shieldpo_floatm3.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_l1m1m2_shieldpo_floatm3/sky130_fd_pr__cap_vpp_04p4x04p6_l1m1m2_shieldpo_floatm3.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2_shieldpom3/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2_shieldpom3.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_03p9x03p9_m1m2_shieldl1_floatm3/sky130_fd_pr__cap_vpp_03p9x03p9_m1m2_shieldl1_floatm3.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_l1m1m2_noshield/sky130_fd_pr__cap_vpp_04p4x04p6_l1m1m2_noshield_o1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_m1m2_noshield/sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2_noshield/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield_o2.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_02p4x04p6_m1m2_noshield/sky130_fd_pr__cap_vpp_02p4x04p6_m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2_noshield/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m2_noshield/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/npn_05v5/sky130_fd_pr__npn_05v5__t.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/npn_05v5/sky130_fd_pr__npn_05v5_W1p00L1p00.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/npn_05v5/sky130_fd_pr__npn_05v5_W1p00L2p00.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/npn_11v0/sky130_fd_pr__npn_11v0_W1p00L1p00.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pnp_05v5/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/corners/tt/specialized_cells.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_latch/sky130_fd_pr__special_nfet_latch__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_pass/sky130_fd_pr__special_nfet_pass__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_pass_flash/sky130_fd_pr__special_nfet_pass_flash__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_pfet_pass/sky130_fd_pr__special_pfet_pass__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_pass_lvt/sky130_fd_pr__special_nfet_pass_lvt__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_pass_lvt/sky130_fd_pr__special_nfet_pass_lvt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/all.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parameters/lod.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parasitics/sky130_fd_pr__model__parasitic__diode_ps2nw.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pw2nd_05v5/sky130_fd_pr__diode_pw2nd_05v5.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pd2nw_05v5/sky130_fd_pr__diode_pd2nw_05v5.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pd2nw_05v5_hvt/sky130_fd_pr__diode_pd2nw_05v5_hvt.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pw2nd_11v0/sky130_fd_pr__diode_pw2nd_11v0.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pd2nw_11v0/sky130_fd_pr__diode_pd2nw_11v0.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pw2nd_05v5_nvt/sky130_fd_pr__diode_pw2nd_05v5_nvt.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pw2nd_05v5_lvt/sky130_fd_pr__diode_pw2nd_05v5_lvt.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pd2nw_05v5_lvt/sky130_fd_pr__diode_pd2nw_05v5_lvt.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parasitics/sky130_fd_pr__model__parasitic__diode_pw2dn.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parasitics/sky130_fd_pr__model__parasitic__diode_ps2dn.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__parasitic__diode_pw2dn.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pnp_05v5/sky130_fd_pr__pnp_05v5_W0p68L0p68.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_g5v0d16v0/sky130_fd_pr__pfet_g5v0d16v0__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_var_lvt/sky130_fd_pr__cap_var_lvt.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_l1m1m2_noshield/sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_noshield_o1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/capacitors/sky130_fd_pr__model__cap_mim.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_mim_m3/sky130_fd_pr__cap_mim_m3_1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_mim_m3/sky130_fd_pr__cap_mim_m3_2.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/capacitors/sky130_fd_pr__model__cap_vpp_only_mos.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2_noshield/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield_o1nhv.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2_noshield/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield_o1phv.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/sonos_p/begin_of_life/mm.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/sonos_e/begin_of_life/mm.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/head.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_pass/sky130_fd_pr__special_nfet_pass.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_latch/sky130_fd_pr__special_nfet_latch.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_pfet_pass/sky130_fd_pr__special_pfet_pass.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/special_nfet_pass_flash/sky130_fd_pr__special_nfet_pass_flash.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/capacitors/sky130_fd_pr__model__cap_vpp_only_pq.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_m1m2m3_shieldl1/sky130_fd_pr__cap_vpp_08p6x07p8_m1m2m3_shieldl1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2m3_shieldl1/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2m3_shieldl1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m2m3_shieldl1/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3_shieldl1.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2m3_shieldm4/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3_shieldm4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2m3_shieldpom4/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3_shieldpom4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4/sky130_fd_pr__cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_06p8x06p1_m1m2m3_shieldl1m4/sky130_fd_pr__cap_vpp_06p8x06p1_m1m2m3_shieldl1m4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/capacitors/sky130_fd_pr__model__cap_vpp_only_p.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m4_noshield/sky130_fd_pr__cap_vpp_11p5x11p7_m1m4_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m2m3m4_shieldm5/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldm5.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4/sky130_fd_pr__cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5/sky130_fd_pr__cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5_nhv.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5/sky130_fd_pr__cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5_nhv__base.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5_x.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_02p9x06p1_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_02p9x06p1_m1m2m3m4_shieldl1_fingercap2.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_02p7x11p1_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_02p7x11p1_m1m2m3m4_shieldl1_fingercap.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_02p7x21p1_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_02p7x21p1_m1m2m3m4_shieldl1_fingercap.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_02p7x41p1_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_02p7x41p1_m1m2m3m4_shieldl1_fingercap.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_02p7x06p1_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_02p7x06p1_m1m2m3m4_shieldl1_fingercap.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_11p3x11p3_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_11p3x11p3_m1m2m3m4_shieldl1_wafflecap.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_05p9x05p9_m1m2m3m4_shieldl1/sky130_fd_pr__cap_vpp_05p9x05p9_m1m2m3m4_shieldl1_wafflecap.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/cap_vpp_44p7x23p1_pol1m1m2m3m4m5_noshield/sky130_fd_pr__cap_vpp_44p7x23p1_pol1m1m2m3m4m5_noshield.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/sky130_fd_pr__model__linear.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parasitics/sky130_fd_pr__model__parasitic__res_po.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_high_po/sky130_fd_pr__res_high_po.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po_0p35.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po_0p69.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po_1p41.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po_2p85.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po_5p73.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_xhigh_po/sky130_fd_pr__res_xhigh_po__base.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_high_po/sky130_fd_pr__res_high_po_0p35.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_high_po/sky130_fd_pr__res_high_po_0p69.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_high_po/sky130_fd_pr__res_high_po_1p41.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_high_po/sky130_fd_pr__res_high_po_2p85.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/res_high_po/sky130_fd_pr__res_high_po_5p73.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_g5v0d10v5/sky130_fd_pr__rf_nfet_g5v0d10v5.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8/sky130_fd_pr__rf_nfet_01v8.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/corners/tt/rf.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8/sky130_fd_pr__rf_nfet_01v8_b__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8/sky130_fd_pr__rf_nfet_01v8_b.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt_b.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_g5v0d10v5/sky130_fd_pr__rf_nfet_g5v0d10v5_b__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_g5v0d10v5/sky130_fd_pr__rf_nfet_g5v0d10v5_b.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8_b__tt.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8_b.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8/sky130_fd_pr__rf_nfet_01v8__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_01v8_lvt/sky130_fd_pr__rf_nfet_01v8_lvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_nfet_g5v0d10v5/sky130_fd_pr__rf_nfet_g5v0d10v5__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8/sky130_fd_pr__rf_pfet_01v8__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt__tt_discrete.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_01v8_mvt/sky130_fd_pr__pfet_01v8_mvt.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/rf_pfet_01v8_mvt/sky130_fd_pr__rf_pfet_01v8_mvt__mismatch.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_20v0/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_20v0/sky130_fd_pr__pfet_20v0__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/pfet_20v0/sky130_fd_pr__pfet_20v0__parasitic__diode_pw2dn.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0/sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0/sky130_fd_pr__nfet_20v0__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parasitics/sky130_fd_pr__model__parasitic__diode_pw2dn__extended_drain.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/diode_pw2nd_05v5/sky130_fd_pr__diode_pw2nd_05v5__extended_drain.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_iso/sky130_fd_pr__nfet_20v0_iso__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/parasitics/sky130_fd_pr__model__parasitic__diode_ps2dn__extended_drain.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_reverse_iso/sky130_fd_pr__nfet_20v0_reverse_iso__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_zvt/sky130_fd_pr__nfet_20v0_zvt__tt_discrete.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_zvt/sky130_fd_pr__nfet_20v0_zvt__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_zvt/sky130_fd_pr__nfet_20v0_zvt__parasitic__diode_ps2dn__extended_drain.model.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_nvt/sky130_fd_pr__nfet_20v0_nvt__tt_discrete.corner.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_nvt/sky130_fd_pr__nfet_20v0_nvt__subcircuit.pm3.spice
+Reading file:  /home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/cells/nfet_20v0_nvt/sky130_fd_pr__nfet_20v0_nvt__parasitic__diode_ps2dn.model.spice
+Time for NDB Parsing: CPU = 459.406 ms, elapsed = 1.04765 s.
+Time accumulated: CPU = 518.973 ms, elapsed = 1.04766 s.
+Peak resident memory used = 127 Mbytes.
+
+
+Warning from spectre in `sky130_fd_pr__nfet_01v8', during circuit read-in.
+    WARNING (SFE-2946): "/home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/../cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice" 30: `sky130_fd_pr__nfet_01v8': Parameter `w' redefines parameter of same name defined at higher level. Local parameter value will be used.
+Warning from spectre in `sky130_fd_pr__pfet_01v8', during circuit read-in.
+    WARNING (SFE-2946): "/home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/models/../cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.pm3.spice" 32: `sky130_fd_pr__pfet_01v8': Parameter `w' redefines parameter of same name defined at higher level. Local parameter value will be used.
+
+Time for Elaboration: CPU = 28.092 ms, elapsed = 31.2519 ms.
+Time accumulated: CPU = 547.14 ms, elapsed = 1.07898 s.
+Peak resident memory used = 141 Mbytes.
+
+
+Notice from spectre in `sky130_fd_pr__nfet_01v8':`xinst0.xinst0.xinst0.xinst0', in `nmos_tile_w1000_l150_nf2':`xinst0.xinst0.xinst0', in `strong_arm_half':`xinst0.xinst0', in `strong_arm':`xinst0', during hierarchy flattening.
+    xinst0.xinst0.xinst0.xinst0.msky130_fd_pr__nfet_01v8: Terminals are not distinct.
+Notice from spectre in `sky130_fd_pr__nfet_01v8':`xinst0.xinst0.xinst0.xinst1', in `nmos_tile_w1000_l150_nf2':`xinst0.xinst0.xinst0', in `strong_arm_half':`xinst0.xinst0', in `strong_arm':`xinst0', during hierarchy flattening.
+    xinst0.xinst0.xinst0.xinst1.msky130_fd_pr__nfet_01v8: Terminals are not distinct.
+Notice from spectre in `sky130_fd_pr__nfet_01v8':`xinst0.xinst0.xinst5.xinst0', in `nmos_tile_w1000_l150_nf2':`xinst0.xinst0.xinst5', in `strong_arm_half':`xinst0.xinst0', in `strong_arm':`xinst0', during hierarchy flattening.
+    xinst0.xinst0.xinst5.xinst0.msky130_fd_pr__nfet_01v8: Terminals are not distinct.
+Notice from spectre in `sky130_fd_pr__nfet_01v8':`xinst0.xinst0.xinst5.xinst1', in `nmos_tile_w1000_l150_nf2':`xinst0.xinst0.xinst5', in `strong_arm_half':`xinst0.xinst0', in `strong_arm':`xinst0', during hierarchy flattening.
+    xinst0.xinst0.xinst5.xinst1.msky130_fd_pr__nfet_01v8: Terminals are not distinct.
+Notice from spectre in `sky130_fd_pr__nfet_01v8':`xinst0.xinst0.xinst8.xinst0', in `nmos_tile_w1000_l150_nf2':`xinst0.xinst0.xinst8', in `strong_arm_half':`xinst0.xinst0', in `strong_arm':`xinst0', during hierarchy flattening.
+    xinst0.xinst0.xinst8.xinst0.msky130_fd_pr__nfet_01v8: Terminals are not distinct.
+        Further occurrences of this notice will be suppressed.
+
+Loading /share/instsww/cadence/LIBERATE/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Time for EDB Visiting: CPU = 36.965 ms, elapsed = 40.6461 ms.
+Time accumulated: CPU = 584.187 ms, elapsed = 1.11971 s.
+Peak resident memory used = 158 Mbytes.
+
+
+Notice from spectre during topology check.
+    No connections to node `xinst0.input_d_p'.
+    No DC path from node `xinst0.input_d_p' to ground, Gmin installed to provide path.
+
+
+Global user options:
+               temp = 25
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 11
+              bsim4 72    
+          capacitor 2     
+            vsource 4     
+
+Analysis and control statement inventory:
+              sweep 1     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 4     
+               save 5     
+
+
+Notice from spectre.
+    19 notices suppressed.
+
+Time for parsing: CPU = 2.047 ms, elapsed = 5.79882 ms.
+Time accumulated: CPU = 586.311 ms, elapsed = 1.12558 s.
+Peak resident memory used = 161 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+********************************************************************
+Transient Analysis `transient1-000_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.227 ms, elapsed = 1.23119 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-000_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             617
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.001 V
+I: I(xinst4:p) = 39.45 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (2.6 %)       8 (40.2 %)     10 (33.3 %)     12 (8.5 %)
+        14 (8.6 %)      18 (2.6 %)      21 (1.7 %)      
+        Total: 102.7%
+Initial condition solution time: CPU = 1.256 ms, elapsed = 1.26004 ms.
+Intrinsic tran analysis time:    CPU = 98.462 ms, elapsed = 106.618 ms.
+Total time required for tran analysis `transient1-000_transient1': CPU = 101.112 ms, elapsed = 112.511 ms.
+Time accumulated: CPU = 694.891 ms, elapsed = 1.26361 s.
+Peak resident memory used = 165 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-001_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.457 ms, elapsed = 1.46294 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-001_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6..
+
+Warning from spectre at time = 2.5 us during transient analysis `transient1-001_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst1.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             666
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.003 V
+I: I(xinst4:p) = 42.38 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (6.2 %)       6 (2.3 %)       8 (41.2 %)     10 (38.2 %)
+        12 (8.3 %)      14 (9.2 %)      18 (2.3 %)      21 (1.5 %)
+        Total: 113.8%
+Initial condition solution time: CPU = 1.486 ms, elapsed = 1.49202 ms.
+Intrinsic tran analysis time:    CPU = 100.861 ms, elapsed = 108.738 ms.
+Total time required for tran analysis `transient1-001_transient1': CPU = 103.582 ms, elapsed = 114.212 ms.
+Time accumulated: CPU = 803.486 ms, elapsed = 1.40482 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-002_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.085 ms, elapsed = 1.08981 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-002_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             700
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.005 V
+I: I(xinst4:p) = 45.37 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (5.5 %)       6 (2.1 %)       8 (39.0 %)     10 (42.1 %)
+        12 (7.5 %)      14 (9.0 %)      18 (2.0 %)      21 (1.4 %)
+        Total: 113.4%
+Initial condition solution time: CPU = 1.107 ms, elapsed = 1.11103 ms.
+Intrinsic tran analysis time:    CPU = 110.501 ms, elapsed = 118.579 ms.
+Total time required for tran analysis `transient1-002_transient1': CPU = 112.979 ms, elapsed = 123.476 ms.
+Time accumulated: CPU = 920.742 ms, elapsed = 1.55684 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-003_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.467 ms, elapsed = 1.47104 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-003_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             713
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.007 V
+I: I(xinst4:p) = 48.39 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.2 %)       2 (5.0 %)       6 (1.9 %)       8 (35.8 %)
+        10 (45.3 %)     12 (8.0 %)      14 (8.1 %)      18 (1.8 %)
+        21 (1.2 %)      
+        Total: 112.1%
+Initial condition solution time: CPU = 1.49 ms, elapsed = 1.49393 ms.
+Intrinsic tran analysis time:    CPU = 113.949 ms, elapsed = 121.7 ms.
+Total time required for tran analysis `transient1-003_transient1': CPU = 117.009 ms, elapsed = 127.773 ms.
+Time accumulated: CPU = 1.04319 s, elapsed = 1.71336 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-004_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.873 ms, elapsed = 3.74794 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-004_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             719
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.008 V
+I: I(xinst4:p) = 51.7 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.1 %)       2 (4.5 %)       6 (1.7 %)       8 (33.0 %)
+        10 (48.6 %)     12 (7.9 %)      14 (7.4 %)      16 (1.1 %)
+        18 (1.7 %)      21 (1.1 %)      
+        Total: 111.5%
+Initial condition solution time: CPU = 1.916 ms, elapsed = 3.79205 ms.
+Intrinsic tran analysis time:    CPU = 112.536 ms, elapsed = 119.796 ms.
+Total time required for tran analysis `transient1-004_transient1': CPU = 115.974 ms, elapsed = 127.838 ms.
+Time accumulated: CPU = 1.16435 s, elapsed = 1.86796 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-005_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.325 ms, elapsed = 1.34087 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-005_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             730
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.009 V
+I: I(xinst4:p) = 54.88 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.0 %)       2 (4.2 %)       6 (1.6 %)       8 (30.6 %)
+        10 (51.3 %)     12 (8.2 %)      14 (6.8 %)      16 (1.6 %)
+        18 (1.6 %)      21 (1.0 %)      
+        Total: 111.0%
+Initial condition solution time: CPU = 1.353 ms, elapsed = 1.369 ms.
+Intrinsic tran analysis time:    CPU = 115.469 ms, elapsed = 123.357 ms.
+Total time required for tran analysis `transient1-005_transient1': CPU = 118.161 ms, elapsed = 128.839 ms.
+Time accumulated: CPU = 1.28697 s, elapsed = 2.02196 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-006_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.64 ms, elapsed = 1.64294 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-006_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             718
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.01 V
+I: I(xinst4:p) = 58.1 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.9 %)       6 (1.4 %)       8 (28.8 %)     10 (53.4 %)
+        12 (8.1 %)      14 (6.3 %)      16 (1.4 %)      18 (1.4 %)
+        Total: 109.6%
+Initial condition solution time: CPU = 1.672 ms, elapsed = 1.67608 ms.
+Intrinsic tran analysis time:    CPU = 113.799 ms, elapsed = 121.945 ms.
+Total time required for tran analysis `transient1-006_transient1': CPU = 117.008 ms, elapsed = 127.801 ms.
+Time accumulated: CPU = 1.40808 s, elapsed = 2.17665 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-007_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 2.11 ms, elapsed = 2.12288 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-007_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6..
+
+Warning from spectre at time = 2.5 us during transient analysis `transient1-007_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst1.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             709
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.011 V
+I: I(xinst4:p) = 61.23 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.6 %)       6 (1.3 %)       8 (28.4 %)     10 (54.9 %)
+        12 (7.6 %)      14 (6.3 %)      16 (1.3 %)      18 (1.3 %)
+        Total: 109.3%
+Initial condition solution time: CPU = 2.154 ms, elapsed = 2.16603 ms.
+Intrinsic tran analysis time:    CPU = 112.731 ms, elapsed = 121.306 ms.
+Total time required for tran analysis `transient1-007_transient1': CPU = 116.729 ms, elapsed = 127.97 ms.
+Time accumulated: CPU = 1.53034 s, elapsed = 2.33444 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-008_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.479 ms, elapsed = 1.48988 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-008_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6..
+
+Warning from spectre at time = 2.5 us during transient analysis `transient1-008_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst1.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.....
+
+Warning from spectre at time = 5 us during transient analysis `transient1-008_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst4.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             713
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.012 V
+I: I(xinst4:p) = 64.33 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.8 %)       6 (1.3 %)       8 (27.6 %)     10 (56.1 %)
+        12 (7.1 %)      14 (5.9 %)      16 (1.3 %)      18 (1.2 %)
+        Total: 108.4%
+Initial condition solution time: CPU = 1.509 ms, elapsed = 1.51992 ms.
+Intrinsic tran analysis time:    CPU = 112.543 ms, elapsed = 120.394 ms.
+Total time required for tran analysis `transient1-008_transient1': CPU = 115.49 ms, elapsed = 126.19 ms.
+Time accumulated: CPU = 1.64976 s, elapsed = 2.4874 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-009_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.453 ms, elapsed = 1.46008 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-009_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6..
+
+Warning from spectre at time = 2.5 us during transient analysis `transient1-009_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst1.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.....
+
+Warning from spectre at time = 5 us during transient analysis `transient1-009_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst4.xinst1.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             705
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.012 V
+I: I(xinst4:p) = 67.43 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.5 %)       6 (1.2 %)       8 (27.1 %)     10 (57.5 %)
+        12 (7.1 %)      14 (5.6 %)      16 (1.6 %)      18 (1.2 %)
+        Total: 108.6%
+Initial condition solution time: CPU = 1.481 ms, elapsed = 1.48892 ms.
+Intrinsic tran analysis time:    CPU = 110.462 ms, elapsed = 117.749 ms.
+Total time required for tran analysis `transient1-009_transient1': CPU = 113.387 ms, elapsed = 123.424 ms.
+Time accumulated: CPU = 1.76829 s, elapsed = 2.63718 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-010_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.623 ms, elapsed = 1.62888 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-010_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6..
+
+Warning from spectre at time = 2.5 us during transient analysis `transient1-010_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst1.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             710
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.013 V
+I: I(xinst4:p) = 70.51 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.3 %)       6 (1.1 %)       8 (26.6 %)     10 (58.9 %)
+        12 (6.7 %)      14 (5.2 %)      16 (1.5 %)      18 (1.1 %)
+        21 (1.1 %)      
+        Total: 108.9%
+Initial condition solution time: CPU = 1.66 ms, elapsed = 1.66798 ms.
+Intrinsic tran analysis time:    CPU = 110.928 ms, elapsed = 119.075 ms.
+Total time required for tran analysis `transient1-010_transient1': CPU = 114.096 ms, elapsed = 124.995 ms.
+Time accumulated: CPU = 1.88631 s, elapsed = 2.78988 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-011_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 2.085 ms, elapsed = 2.09618 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-011_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             732
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.013 V
+I: I(xinst4:p) = 73.56 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.2 %)       6 (1.1 %)       8 (25.8 %)     10 (59.8 %)
+        12 (6.6 %)      14 (4.9 %)      16 (1.4 %)      18 (1.0 %)
+        21 (1.1 %)      
+        Total: 108.4%
+Initial condition solution time: CPU = 2.13 ms, elapsed = 2.14219 ms.
+Intrinsic tran analysis time:    CPU = 116.61 ms, elapsed = 125.595 ms.
+Total time required for tran analysis `transient1-011_transient1': CPU = 120.623 ms, elapsed = 132.438 ms.
+Time accumulated: CPU = 2.01212 s, elapsed = 2.95229 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-012_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 2.022 ms, elapsed = 2.0299 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-012_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             732
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.input_d_n) = 2.014 V
+I: I(xinst4:p) = 76.58 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (3.0 %)       8 (25.1 %)     10 (60.8 %)     12 (6.6 %)
+        14 (5.0 %)      16 (1.3 %)      
+        Total: 108.1%
+Initial condition solution time: CPU = 2.062 ms, elapsed = 2.06995 ms.
+Intrinsic tran analysis time:    CPU = 115.623 ms, elapsed = 123.639 ms.
+Total time required for tran analysis `transient1-012_transient1': CPU = 119.311 ms, elapsed = 130.224 ms.
+Time accumulated: CPU = 2.13661 s, elapsed = 3.11188 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-013_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 2.069 ms, elapsed = 2.08116 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-013_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             733
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.032 V
+I: I(xinst4:p) = 79.59 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (2.8 %)       8 (26.4 %)     10 (58.0 %)     12 (6.6 %)
+        14 (6.0 %)      16 (1.3 %)      
+        Total: 107.2%
+Initial condition solution time: CPU = 2.108 ms, elapsed = 2.12097 ms.
+Intrinsic tran analysis time:    CPU = 115.133 ms, elapsed = 124.263 ms.
+Total time required for tran analysis `transient1-013_transient1': CPU = 119.18 ms, elapsed = 131.095 ms.
+Time accumulated: CPU = 2.26089 s, elapsed = 3.27164 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-014_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.502 ms, elapsed = 1.50609 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-014_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             741
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.059 V
+I: I(xinst4:p) = 82.56 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         2 (2.7 %)       8 (28.8 %)     10 (55.7 %)     12 (6.3 %)
+        14 (6.0 %)      16 (1.2 %)      
+        Total: 106.8%
+Initial condition solution time: CPU = 1.532 ms, elapsed = 1.53708 ms.
+Intrinsic tran analysis time:    CPU = 115.5 ms, elapsed = 123.564 ms.
+Total time required for tran analysis `transient1-014_transient1': CPU = 118.488 ms, elapsed = 129.425 ms.
+Time accumulated: CPU = 2.38428 s, elapsed = 3.42795 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-015_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.054 ms, elapsed = 1.05906 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-015_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             731
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.083 V
+I: I(xinst4:p) = 85.51 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (2.0 %)       2 (2.6 %)       6 (2.0 %)       8 (31.0 %)
+        10 (55.2 %)     12 (6.0 %)      14 (5.8 %)      16 (1.4 %)
+        Total: 110.4%
+Initial condition solution time: CPU = 1.075 ms, elapsed = 1.08004 ms.
+Intrinsic tran analysis time:    CPU = 108.152 ms, elapsed = 115.878 ms.
+Total time required for tran analysis `transient1-015_transient1': CPU = 110.365 ms, elapsed = 120.764 ms.
+Time accumulated: CPU = 2.49798 s, elapsed = 3.57418 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-016_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.176 ms, elapsed = 1.17898 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-016_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.....
+
+Warning from spectre at time = 5 us during transient analysis `transient1-016_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: xinst0.xinst0.xinst4.xinst0.msky130_fd_pr__nfet_01v8:int_b. Check the design or use '+diagnose' to get more information.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             735
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.106 V
+I: I(xinst4:p) = 88.45 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.5 %)       6 (1.9 %)       8 (32.8 %)
+        10 (52.9 %)     12 (6.3 %)      14 (6.6 %)      16 (1.7 %)
+        Total: 111.1%
+Initial condition solution time: CPU = 1.2 ms, elapsed = 1.20306 ms.
+Intrinsic tran analysis time:    CPU = 110.574 ms, elapsed = 117.844 ms.
+Total time required for tran analysis `transient1-016_transient1': CPU = 112.977 ms, elapsed = 123.071 ms.
+Time accumulated: CPU = 2.61471 s, elapsed = 3.72346 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-017_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.972 ms, elapsed = 1.98102 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-017_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             734
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.127 V
+I: I(xinst4:p) = 91.38 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.6 %)       6 (1.9 %)       8 (31.6 %)
+        10 (53.7 %)     12 (6.8 %)      14 (6.4 %)      16 (1.8 %)
+        Total: 110.9%
+Initial condition solution time: CPU = 2.011 ms, elapsed = 2.02107 ms.
+Intrinsic tran analysis time:    CPU = 117.217 ms, elapsed = 126.379 ms.
+Total time required for tran analysis `transient1-017_transient1': CPU = 121.815 ms, elapsed = 133.714 ms.
+Time accumulated: CPU = 2.74134 s, elapsed = 3.88542 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-018_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.744 ms, elapsed = 1.75405 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-018_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             733
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.147 V
+I: I(xinst4:p) = 94.3 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.8 %)       2 (2.8 %)       6 (1.8 %)       8 (30.3 %)
+        10 (54.8 %)     12 (7.1 %)      14 (6.1 %)      16 (1.8 %)
+        Total: 110.5%
+Initial condition solution time: CPU = 1.778 ms, elapsed = 1.79005 ms.
+Intrinsic tran analysis time:    CPU = 115.075 ms, elapsed = 123.133 ms.
+Total time required for tran analysis `transient1-018_transient1': CPU = 118.432 ms, elapsed = 129.18 ms.
+Time accumulated: CPU = 2.86426 s, elapsed = 4.04092 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-019_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.484 ms, elapsed = 1.49298 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-019_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             735
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.165 V
+I: I(xinst4:p) = 97.21 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.7 %)       2 (2.7 %)       6 (1.7 %)       8 (29.2 %)
+        10 (55.6 %)     12 (6.8 %)      14 (6.4 %)      16 (1.7 %)
+        Total: 109.7%
+Initial condition solution time: CPU = 1.515 ms, elapsed = 1.52397 ms.
+Intrinsic tran analysis time:    CPU = 114.23 ms, elapsed = 123.066 ms.
+Total time required for tran analysis `transient1-019_transient1': CPU = 117.203 ms, elapsed = 128.797 ms.
+Time accumulated: CPU = 2.98553 s, elapsed = 4.19516 s.
+Peak resident memory used = 166 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-020_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.639 ms, elapsed = 1.64986 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-020_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             741
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.182 V
+I: I(xinst4:p) = 100.1 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.6 %)       6 (1.6 %)       8 (28.2 %)
+        10 (56.5 %)     12 (6.6 %)      14 (6.4 %)      16 (1.6 %)
+        Total: 109.6%
+Initial condition solution time: CPU = 1.673 ms, elapsed = 1.6849 ms.
+Intrinsic tran analysis time:    CPU = 115.482 ms, elapsed = 123.498 ms.
+Total time required for tran analysis `transient1-020_transient1': CPU = 118.672 ms, elapsed = 129.45 ms.
+Time accumulated: CPU = 3.10852 s, elapsed = 4.35156 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-021_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.672 ms, elapsed = 1.67608 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-021_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             736
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.199 V
+I: I(xinst4:p) = 103 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.8 %)       2 (2.5 %)       6 (1.6 %)       8 (27.1 %)
+        10 (57.3 %)     12 (6.3 %)      14 (6.8 %)      16 (1.6 %)
+        Total: 109.2%
+Initial condition solution time: CPU = 1.705 ms, elapsed = 1.70898 ms.
+Intrinsic tran analysis time:    CPU = 114.896 ms, elapsed = 123.223 ms.
+Total time required for tran analysis `transient1-021_transient1': CPU = 117.872 ms, elapsed = 128.629 ms.
+Time accumulated: CPU = 3.23108 s, elapsed = 4.50925 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-022_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.721 ms, elapsed = 1.73402 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-022_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             742
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.214 V
+I: I(xinst4:p) = 105.9 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.8 %)       2 (2.6 %)       6 (1.5 %)       8 (26.2 %)
+        10 (58.1 %)     12 (6.1 %)      14 (7.0 %)      16 (1.7 %)
+        Total: 109.3%
+Initial condition solution time: CPU = 1.754 ms, elapsed = 1.76811 ms.
+Intrinsic tran analysis time:    CPU = 117.568 ms, elapsed = 126.953 ms.
+Total time required for tran analysis `transient1-022_transient1': CPU = 120.898 ms, elapsed = 132.978 ms.
+Time accumulated: CPU = 3.35657 s, elapsed = 4.66891 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-023_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.623 ms, elapsed = 1.62482 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-023_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             750
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.228 V
+I: I(xinst4:p) = 108.8 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.7 %)       2 (2.7 %)       6 (1.5 %)       8 (25.3 %)
+        10 (58.8 %)     12 (5.9 %)      14 (7.2 %)      16 (1.7 %)
+        Total: 109.1%
+Initial condition solution time: CPU = 1.653 ms, elapsed = 1.65796 ms.
+Intrinsic tran analysis time:    CPU = 117.76 ms, elapsed = 125.811 ms.
+Total time required for tran analysis `transient1-023_transient1': CPU = 120.956 ms, elapsed = 131.9 ms.
+Time accumulated: CPU = 3.48176 s, elapsed = 4.82723 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-024_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.643 ms, elapsed = 1.65105 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-024_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             750
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.24 V
+I: I(xinst4:p) = 111.8 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.6 %)       2 (2.9 %)       6 (1.4 %)       8 (24.9 %)
+        10 (59.6 %)     12 (5.7 %)      14 (7.4 %)      16 (1.6 %)
+        Total: 109.5%
+Initial condition solution time: CPU = 1.676 ms, elapsed = 1.6849 ms.
+Intrinsic tran analysis time:    CPU = 117.18 ms, elapsed = 124.886 ms.
+Total time required for tran analysis `transient1-024_transient1': CPU = 120.49 ms, elapsed = 131.079 ms.
+Time accumulated: CPU = 3.60701 s, elapsed = 4.98423 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-025_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.685 ms, elapsed = 1.688 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-025_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             755
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.251 V
+I: I(xinst4:p) = 114.7 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.8 %)       2 (2.8 %)       6 (1.4 %)       8 (24.4 %)
+        10 (60.1 %)     12 (5.6 %)      14 (7.6 %)      16 (1.6 %)
+        Total: 109.3%
+Initial condition solution time: CPU = 1.717 ms, elapsed = 1.72091 ms.
+Intrinsic tran analysis time:    CPU = 117.603 ms, elapsed = 126.065 ms.
+Total time required for tran analysis `transient1-025_transient1': CPU = 120.571 ms, elapsed = 131.477 ms.
+Time accumulated: CPU = 3.7316 s, elapsed = 5.14209 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-026_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.874 ms, elapsed = 1.88208 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-026_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             761
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.262 V
+I: I(xinst4:p) = 117.7 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.7 %)       2 (2.9 %)       6 (1.3 %)       8 (26.0 %)
+        10 (58.3 %)     12 (5.9 %)      14 (7.3 %)      16 (1.5 %)
+        Total: 109.4%
+Initial condition solution time: CPU = 1.912 ms, elapsed = 1.91998 ms.
+Intrinsic tran analysis time:    CPU = 124.643 ms, elapsed = 133.406 ms.
+Total time required for tran analysis `transient1-026_transient1': CPU = 129.048 ms, elapsed = 140.817 ms.
+Time accumulated: CPU = 3.86494 s, elapsed = 5.30765 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-027_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.409 ms, elapsed = 1.41215 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-027_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             762
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.273 V
+I: I(xinst4:p) = 121.2 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.8 %)       6 (1.3 %)       8 (27.4 %)
+        10 (56.6 %)     12 (6.0 %)      14 (7.1 %)      16 (1.5 %)
+        Total: 109.2%
+Initial condition solution time: CPU = 1.438 ms, elapsed = 1.44601 ms.
+Intrinsic tran analysis time:    CPU = 116.702 ms, elapsed = 124.748 ms.
+Total time required for tran analysis `transient1-027_transient1': CPU = 119.606 ms, elapsed = 130.683 ms.
+Time accumulated: CPU = 3.98815 s, elapsed = 5.46304 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-028_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.507 ms, elapsed = 1.51587 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-028_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             773
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.282 V
+I: I(xinst4:p) = 124.6 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.8 %)       2 (2.7 %)       6 (1.5 %)       8 (28.9 %)
+        10 (55.2 %)     12 (6.1 %)      14 (6.9 %)      16 (1.4 %)
+        Total: 109.1%
+Initial condition solution time: CPU = 1.537 ms, elapsed = 1.54591 ms.
+Intrinsic tran analysis time:    CPU = 118.947 ms, elapsed = 126.161 ms.
+Total time required for tran analysis `transient1-028_transient1': CPU = 121.883 ms, elapsed = 131.842 ms.
+Time accumulated: CPU = 4.11428 s, elapsed = 5.62111 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-029_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.086 ms, elapsed = 1.0891 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-029_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             764
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.293 V
+I: I(xinst4:p) = 128.2 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.8 %)       4 (1.4 %)       6 (1.4 %)
+         8 (29.4 %)     10 (55.8 %)     12 (6.2 %)      14 (6.9 %)
+        16 (1.4 %)      21 (1.1 %)      
+        Total: 111.3%
+Initial condition solution time: CPU = 1.108 ms, elapsed = 1.11103 ms.
+Intrinsic tran analysis time:    CPU = 112.429 ms, elapsed = 122.026 ms.
+Total time required for tran analysis `transient1-029_transient1': CPU = 114.69 ms, elapsed = 127.099 ms.
+Time accumulated: CPU = 4.23244 s, elapsed = 5.77322 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-030_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.08 ms, elapsed = 1.08385 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-030_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             779
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.302 V
+I: I(xinst4:p) = 131.7 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.9 %)       4 (1.7 %)       6 (1.4 %)
+         8 (30.5 %)     10 (54.9 %)     12 (6.2 %)      14 (6.9 %)
+        16 (1.4 %)      21 (1.0 %)      
+        Total: 111.7%
+Initial condition solution time: CPU = 1.102 ms, elapsed = 1.10698 ms.
+Intrinsic tran analysis time:    CPU = 121.202 ms, elapsed = 128.925 ms.
+Total time required for tran analysis `transient1-030_transient1': CPU = 123.482 ms, elapsed = 133.97 ms.
+Time accumulated: CPU = 4.3595 s, elapsed = 5.93347 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-031_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.678 ms, elapsed = 1.68204 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-031_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             796
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.tail_d) = 2.311 V
+I: I(xinst4:p) = 135.1 mA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (2.0 %)       2 (2.8 %)       4 (1.7 %)       6 (1.3 %)
+         8 (31.9 %)     10 (53.4 %)     12 (6.3 %)      14 (6.7 %)
+        16 (1.3 %)      
+        Total: 111.5%
+Initial condition solution time: CPU = 1.71 ms, elapsed = 1.71494 ms.
+Intrinsic tran analysis time:    CPU = 121.093 ms, elapsed = 129.286 ms.
+Total time required for tran analysis `transient1-031_transient1': CPU = 124.366 ms, elapsed = 135.273 ms.
+Time accumulated: CPU = 4.48822 s, elapsed = 6.09551 s.
+Peak resident memory used = 167 Mbytes.
+
+
+********************************************************************
+Transient Analysis `transient1-032_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.826 ms, elapsed = 1.83201 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-032_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.....
+
+Warning from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 5 us during transient analysis `transient1-032_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             878
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.xinst1.xinst4.xinst1.msky130_fd_pr__nfet_01v8:int_b) = 54.35 V
+I: I(xinst2:p) = 1.645 kA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+   -   The circuit contains signals of the voltage > 10V, consider to set highvoltage=yes to get better accuracy and convergence ability.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.9 %)       2 (2.9 %)       4 (1.6 %)       6 (1.4 %)
+         8 (34.2 %)     10 (51.1 %)     12 (6.7 %)      14 (6.4 %)
+        16 (1.4 %)      
+        Total: 111.6%
+Initial condition solution time: CPU = 1.861 ms, elapsed = 1.86801 ms.
+Intrinsic tran analysis time:    CPU = 224.784 ms, elapsed = 232.572 ms.
+Total time required for tran analysis `transient1-032_transient1': CPU = 228.42 ms, elapsed = 239.053 ms.
+Time accumulated: CPU = 4.72115 s, elapsed = 6.36072 s.
+Peak resident memory used = 167 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    6 warnings suppressed.
+
+
+********************************************************************
+Transient Analysis `transient1-033_transient1': time = (0 s -> 6 us)
+********************************************************************
+DC simulation time: CPU = 1.423 ms, elapsed = 1.43003 ms.
+
+Opening the PSFXL file strong_arm.raw/transient1-033_transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 6 us
+    step = 6 ns
+    maxstep = 60 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  4       
+                 save   5       (voltage)
+
+.............9.............8.............7.............6.............5.............4.............3.............2.....
+
+Warning from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Warning from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+Notice from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Notice from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Warning from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    WARNING (SPECTRE-16191): Minimum time step used.  Solution might be in error.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre at time = 5 us during transient analysis `transient1-033_transient1', during task `MDLControl'.
+    Newton iteration fails to converge at time = 5 us step = 199.9e-21 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+        Further occurrences of this notice will be suppressed.
+
+.............9.............8.............7.............6.............5.............4.............3.............2.............1.............0
+Number of accepted tran steps =             853
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xinst0.xinst0.xinst3.xinst0.msky130_fd_pr__nfet_01v8:int_b) = 149.1 V
+I: I(xinst2:p) = 410.9 A
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+   -   The circuit contains signals of the voltage > 10V, consider to set highvoltage=yes to get better accuracy and convergence ability.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.8 %)       2 (2.7 %)       4 (1.5 %)       6 (1.4 %)
+         8 (32.8 %)     10 (52.9 %)     12 (7.1 %)      14 (6.3 %)
+        16 (1.4 %)      
+        Total: 111.6%
+Initial condition solution time: CPU = 1.453 ms, elapsed = 1.45793 ms.
+Intrinsic tran analysis time:    CPU = 267.607 ms, elapsed = 275.948 ms.
+Total time required for tran analysis `transient1-033_transient1': CPU = 270.568 ms, elapsed = 281.793 ms.
+Time accumulated: CPU = 4.99604 s, elapsed = 6.66724 s.
+Peak resident memory used = 167 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 warnings suppressed.
+
+
+Aggregate audit (3:56:18 PM, Sun Jul 21, 2024):
+Time used: CPU = 5.02 s, elapsed = 6.7 s, util. = 74.9%.
+Time spent in licensing: elapsed = 30.5 ms.
+Peak memory used = 167 Mbytes.
+Simulation started at: 3:56:11 PM, Sun Jul 21, 2024, ended at: 3:56:18 PM, Sun Jul 21, 2024, with elapsed time (wall clock): 6.7 s.
+spectre completes with 0 errors, 20 warnings, and 20 notices.

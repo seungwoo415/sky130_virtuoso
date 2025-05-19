@@ -1,0 +1,12 @@
+===================
+Spice In Log File
+===================
+Parameter file: /tmp/spiceInPw72950
+Import Parameters:
+	Netlist file name: /home/aa/users/cs199-apt/cadence/sky130_virtuoso/strong_arm.sp
+	Output library name: strong_arm2
+	Output View Type: schematic
+	Schematic view name: schematic
+	Netlist view name: netlist_tmp
+	Reference Library List: INFO (SPICEIN-56): Spice In failed to import the netlist file '/home/aa/users/cs199-apt/cadence/sky130_virtuoso/strong_arm.sp'. You may like to read the log
+file 'spiceIn.log' for details.
