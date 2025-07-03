@@ -16,12 +16,13 @@ DEFINE digital_ldo_core /home/aa/users/cs199-apt/cadence/sky130_virtuoso/digital
 #Removed by ddDeleteObj: DEFINE strong_arm /home/aa/users/cs199-apt/cadence/sky130_virtuoso/strong_arm
 DEFINE pass_transistors /home/aa/users/cs199-apt/cadence/sky130_virtuoso/pass_transistors
 DEFINE rs_latch_new /home/aa/users/cs199-apt/cadence/sky130_virtuoso/rs_latch_new
-#Removed by ddDeleteObj: DEFINE inverter /home/aa/users/cs199-apt/cadence/sky130_virtuoso/inverter
 DEFINE inverter /home/aa/users/cs199-apt/cadence/sky130_virtuoso/inverter
 DEFINE strong_arm /home/aa/users/cs199-apt/cadence/sky130_virtuoso/strong_arm
 DEFINE DigitalLDOLogic /home/aa/users/cs199-apt/cadence/sky130_virtuoso/DigitalLDOLogic
 DEFINE DigitalLDOLogic /home/aa/users/cs199-apt/cadence/sky130_virtuoso/DigitalLDOLogic
 DEFINE strong_arm2 /home/aa/users/cs199-apt/cadence/sky130_virtuoso/strong_arm2
-#Removed by ddDeleteObj: DEFINE 1 /home/aa/users/cs199-apt/cadence/sky130_virtuoso/1
 DEFINE digitallogic /home/aa/users/cs199-apt/cadence/sky130_virtuoso/digitallogic
 DEFINE design /home/aa/users/cs199-apt/cadence/sky130_virtuoso/design
+DEFINE ADC /home/aa/users/cs199-apt/cadence/sky130_virtuoso/ADC
+           DEFINE analogLib $(inst_root_with:tools/dfII/bin/virtuoso)/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE basic $(inst_root_with:tools/dfII/bin/virtuoso)/tools/dfII/etc/cdslib/basic

@@ -4,45 +4,45 @@
 
 .SUBCKT nmos_tile_w6500_l150_nf2 sd_0 sd_1 sd_2 g_0 b
 
-  Minst0 sd_0 g_0 sd_1 b nfet_01v8 l=0.150u mult=1 nf=1 w=6.500u
+  Minst0 sd_0 g_0 sd_1 b sky130_fd_pr__nfet_01v8 l=0.150u mult=1 nf=1 w=6.500u
 
-  Minst1 sd_1 g_0 sd_2 b nfet_01v8 l=0.150u mult=1 nf=1 w=6.500u
+  Minst1 sd_1 g_0 sd_2 b sky130_fd_pr__nfet_01v8 l=0.150u mult=1 nf=1 w=6.500u
 
 
 .ENDS nmos_tile_w6500_l150_nf2
 
 .SUBCKT nmos_tile_w1000_l150_nf2 sd_0 sd_1 sd_2 g_0 b
 
-  Minst0 sd_0 g_0 sd_1 b nfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
+  Minst0 sd_0 g_0 sd_1 b sky130_fd_pr__nfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
 
-  Minst1 sd_1 g_0 sd_2 b nfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
+  Minst1 sd_1 g_0 sd_2 b sky130_fd_pr__nfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
 
 
 .ENDS nmos_tile_w1000_l150_nf2
 
 .SUBCKT nmos_tile_w11000_l150_nf2 sd_0 sd_1 sd_2 g_0 b
 
-  Minst0 sd_0 g_0 sd_1 b nfet_01v8 l=0.150u mult=1 nf=1 w=11.000u
+  Minst0 sd_0 g_0 sd_1 b sky130_fd_pr__nfet_01v8 l=0.150u mult=1 nf=1 w=11.000u
 
-  Minst1 sd_1 g_0 sd_2 b nfet_01v8 l=0.150u mult=1 nf=1 w=11.000u
+  Minst1 sd_1 g_0 sd_2 b sky130_fd_pr__nfet_01v8 l=0.150u mult=1 nf=1 w=11.000u
 
 
 .ENDS nmos_tile_w11000_l150_nf2
 
 .SUBCKT pmos_tile_w1000_l150_nf2 sd_0 sd_1 sd_2 g_0 b
 
-  Minst0 sd_0 g_0 sd_1 b pfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
+  Minst0 sd_0 g_0 sd_1 b sky130_fd_pr__pfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
 
-  Minst1 sd_1 g_0 sd_2 b pfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
+  Minst1 sd_1 g_0 sd_2 b sky130_fd_pr__pfet_01v8 l=0.150u mult=1 nf=1 w=1.000u
 
 
 .ENDS pmos_tile_w1000_l150_nf2
 
 .SUBCKT pmos_tile_w420_l150_nf2 sd_0 sd_1 sd_2 g_0 b
 
-  Minst0 sd_0 g_0 sd_1 b pfet_01v8 l=0.150u mult=1 nf=1 w=0.420u
+  Minst0 sd_0 g_0 sd_1 b sky130_fd_pr__pfet_01v8 l=0.150u mult=1 nf=1 w=0.420u
 
-  Minst1 sd_1 g_0 sd_2 b pfet_01v8 l=0.150u mult=1 nf=1 w=0.420u
+  Minst1 sd_1 g_0 sd_2 b sky130_fd_pr__pfet_01v8 l=0.150u mult=1 nf=1 w=0.420u
 
 
 .ENDS pmos_tile_w420_l150_nf2
