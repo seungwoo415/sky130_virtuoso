@@ -20,21 +20,21 @@ ends nmos_tile_w1000_l150_nf2
 
 subckt pmos_tile_w1000_l150_nf2 ( sd_0 sd_1 sd_2 g_0 b )
 
-  xinst0 ( sd_0 g_0 sd_1 b ) sky130_fd_pr__pfet_01v8 l=0.15u nf=1 w=8.5u
+  xinst0 ( sd_0 g_0 sd_1 b ) sky130_fd_pr__pfet_01v8 l=0.15u nf=1 w=6.85u
   *xinst1 ( sd_1 g_0 sd_2 b ) sky130_fd_pr__pfet_01v8 l=0.15u nf=1 w=0.5u
 
 ends pmos_tile_w1000_l150_nf2
 
 subckt nmos_tile_tail ( sd_0 sd_1 sd_2 g_0 b )
 
-  xinst0 ( sd_0 g_0 sd_1 b ) sky130_fd_pr__nfet_01v8 l=1.1u nf=1 w=3.2u
+  xinst0 ( sd_0 g_0 sd_1 b ) sky130_fd_pr__nfet_01v8 l=0.55u nf=1 w=2.7u
   *xinst1 ( sd_1 g_0 sd_2 b ) sky130_fd_pr__nfet_01v8 l=0.5u nf=1 w=2u
 
 ends nmos_tile_tail 
 
 subckt nmos_tile_input ( sd_0 sd_1 sd_2 g_0 b )
 
-  xinst0 ( sd_0 g_0 sd_1 b ) sky130_fd_pr__nfet_01v8 l=0.9u nf=1 w=1.9u
+  xinst0 ( sd_0 g_0 sd_1 b ) sky130_fd_pr__nfet_01v8 l=0.55u f=1 w=3.9u
   *xinst1 ( sd_1 g_0 sd_2 b ) sky130_fd_pr__nfet_01v8 l=0.5u nf=1 w=2u
 
 ends nmos_tile_input
@@ -83,6 +83,13 @@ subckt strong_arm ( input_p input_n output_p output_n clock vdd vss )
 
 ends strong_arm
 
+subckt inverter vdd vss din dout
+
+  Xinst0 dout din vss vss sky130_fd_pr__nfet_01v8 l=0.150u nf=1 w=1.000u
+  Xinst1 dout din vdd vdd sky130_fd_pr__pfet_01v8 l=0.150u nf=1 w=1.600u
+
+ends inverter
+
 parameters Vcm=1.5 Vdiff=0.02 frequency=100K
 
 xinst0 ( vinp vinn output_p output_n clk vdd 0 ) strong_arm
@@ -90,8 +97,10 @@ xinst1 ( vinp 0 ) vsource dc=Vcm type=sine ampl=Vdiff freq=frequency
 xinst2 ( vinn 0 ) vsource dc=Vcm type=sine ampl=-Vdiff freq=frequency
 xinst3 ( vdd 0 ) vsource dc=1.8 type=dc
 xinst4 ( clk 0 ) vsource delay=0 fall=100p period=5u rise=100p type=pulse val0=1.8 val1=0 width=2.5u
-xinst5 (output_p 0) capacitor c=1pF
-xinst6 (output_n 0) capacitor c=1pF
+*xinst5 (output_p 0) capacitor c=1pF
+*xinst6 (output_n 0) capacitor c=1pF
+xinst5 (vdd 0 output_n output_n1 ) inverter
+xinst6 (vdd 0 output_p output_p1 ) inverter
 
 settemp1 options temp=25.0
 save output_p
@@ -100,9 +109,9 @@ save output_n
 save vinn
 save clk
 
-analysis_0 tran stop=50u 
+analysis_0 tran stop=100u 
 
-*precharge_w sweep param=W_n start=0.5u stop=10u step=0.1u {
+*precharge_w sweep param=W_n start=0.5u stop=10u step=0.05u {
 *        analysis_0 tran stop=30u 
 *}
 
